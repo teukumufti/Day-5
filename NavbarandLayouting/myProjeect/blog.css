@@ -1,0 +1,75 @@
+body {
+  background-color: white;
+}
+
+.box-project {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.blog-detail {
+  padding-bottom: 13px;
+  box-shadow: 0px 0px 20px rgb(5, 5, 5);
+  border-radius: 8px;
+}
+
+.style-imageBlogDetail {
+  margin-left: 8px;
+  max-width: 250px;
+  height: auto;
+  margin-top: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px rgb(5, 5, 5);
+}
+
+div h3 {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+div p {
+  margin-left: 15px;
+}
+
+.style-icons {
+  display: flex;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+.style-buttonBlogDetails {
+  display: flex;
+  justify-content: center;
+}
+
+.style-buttonEdit {
+  margin-right: 5px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  border: none;
+  width: 120px;
+  padding: 3px 3px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.style-buttonEdit:active {
+  background-color: white;
+  color: black;
+}
+
+.style-buttonDelete {
+  margin-left: 0;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  border: none;
+  width: 120px;
+  padding: 3px 3px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.style-buttonDelete:active {
+  background-color: white;
+  color: black;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="form.js"></script>
+  </head>
+  <body style="background-color: #e8e8e8;">
+    <div>
+      <nav>
+        <div class="nav-left">
+          <img src="/NavbarandLayouting/asset/dumbways.png" alt="logol" />
+          <ul>
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="/NavbarandLayouting/myProjeect/blog.html">My Projects</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <a href="contact.html">Contact Me</a>
+        </div>
+      </nav>
+
+      <form style="width: 400px; margin: auto; padding-top: 75px">
+        <h3 style="margin-left: 35%; margin-bottom: 30px">GET IN TOUCH</h3>
+        <div>
+          <label for="input-name" style="font-weight: bold; font-size: 20px"
+            >Name</label
+          >
+          <input
+            type="text"
+            id="input-name"
+            placeholder="your name"
+            style="
+              background-color: rgb(245, 248, 248);
+              width: 100%;
+              padding: 10px;
+              margin-top: 5px;
+              border-radius: 5px;
+              border: 1px solid rgb(95, 99, 99);
+            "
+          />
+        </div>
+
+        <div style="margin-top: 13px">
+          <label for="input-email" style="font-weight: bold; font-size: 20px"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="input-email"
+            placeholder="your email"
+            style="
+              background-color: rgb(245, 248, 248);
+              width: 100%;
+              padding: 10px;
+              margin-top: 5px;
+              border-radius: 5px;
+              border: 1px solid rgb(117, 122, 122);
+            "
+          />
+        </div>
+
+        <div style="margin-top: 13px">
+          <label for="input-phone" style="font-weight: bold; font-size: 20px"
+            >Phone Numbers</label
+          >
+          <input
+            type="number"
+            id="input-phone"
+            placeholder="your phone numbers"
+            style="
+              background-color: rgb(245, 248, 248);
+              width: 100%;
+              padding: 10px;
+              margin-top: 5px;
+              border-radius: 5px;
+              border: 1px solid rgb(95, 99, 99);
+            "
+          />
+        </div>
+
+        <div style="margin-top: 13px; width: 105%">
+          <label for="input-subject" style="font-weight: bold; font-size: 20px"
+            >Subject</label
+          >
+          <select
+            id="input-subject"
+            style="
+              background-color: rgb(245, 248, 248);
+              width: 100%;
+              padding: 10px;
+              margin-top: 5px;
+              border-radius: 5px;
+              border: 1px solid rgb(95, 99, 99);
+            "
+          >
+            <option hidden value="">---Select here---</option>
+            <option>Let's Talk</option>
+            <option>Let's Collaboration</option>
+            <option>I'm Hiring</option>
+          </select>
+        </div>
+
+        <div style="margin-top: 13px">
+          <label for="input-message" style="font-weight: bold; font-size: 20px"
+            >Message</label
+          >
+          <textarea
+            id="input-message"
+            placeholder="your message"
+            style="
+              background-color: rgb(245, 248, 248);
+              width: 100%;
+              padding: 10px;
+              padding: 10px;
+              margin-top: 5px;
+              border-radius: 5px;
+              border: 1px solid rgb(95, 99, 99);
+              height: 200px;
+              resize: vertical;
+            "
+          ></textarea>
+        </div>
+
+        <button class="button-style"
+        
+            onclick="submitData()" type="button"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html

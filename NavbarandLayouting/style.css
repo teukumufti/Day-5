@@ -1,0 +1,157 @@
+
+body {
+    margin: 0px;
+    padding-bottom: 75px;
+}
+
+p {
+    margin: 5px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 3px;
+    display: flex;
+}
+
+
+nav .nav-left {
+    display: flex;
+    padding-left: 100px;
+    flex: 50%;
+    align-items: center;
+}
+
+nav .nav-left img {
+    width: 30px;
+}
+
+
+nav .nav-left li {
+    display: inline;
+}
+
+nav .nav-left ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 12px 12px;
+}
+
+.active, .nav-left ul li a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+nav .nav-right {
+   display: flex; 
+   flex: 50%;
+   justify-content: flex-end;
+   align-items: center;
+   padding-right: 100px;
+   
+}
+
+nav .nav-right a {
+    background-color: black;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 9px;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+.nav-right a:hover {
+    background-color: white;
+    color: black;
+}
+.nav-right a:active{
+    background-color: black;
+    color: white;
+}
+
+
+.container {
+    padding-top: 75px; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container section {
+    margin: 4% auto;
+    max-width: 80%;
+    margin-left: 170px;
+}
+
+
+section .section-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-right: 100px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgb(5, 5, 5)
+}
+
+.text-download {
+    display: flex;
+}
+
+div .text-download p {
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+div .text-download img {
+    margin-top: 10px;
+}
+
+
+
+
+/* .img-posisition {
+   display: flex; 
+   justify-content: flex-end;
+} */
+
+.img-style {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-left: 100px;
+    
+}
+
+.img-elon {
+    text-align: center; 
+    border-radius: 5px;
+    padding-bottom: 0px;
+    box-shadow: 0px 0px 10px black;
+            
+            
+}
+
+div .sosmed {
+    display: flex;
+    margin-top: 10px;
+    padding-top: 20px; 
+    text-align: center;
+}
+
+.button-style {
+    margin-left: 78%;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    border: none;
+    padding: 8px 35px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.button-style:active {
+    background-color: white;
+    color: black;
+}

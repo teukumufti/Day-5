@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My prooject</title>
+    <link rel="stylesheet" href="/NavbarandLayouting/myProjeect/blog.css" />
+    <link rel="stylesheet" href="/NavbarandLayouting/style.css" />
+    <link rel="stylesheet" href="/NavbarandLayouting/myProjeect/project.css" />
+    <script src="/NavbarandLayouting/myProjeect/blog.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div style="background-color: rgb(232, 232, 232); padding-bottom: 4%">
+      <nav>
+        <div class="nav-left">
+          <img src="/NavbarandLayouting/asset/dumbways.png" alt="logo" />
+          <ul>
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="/NavbarandLayouting/myProjeect/blog.html">My Projects</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-right">
+          <a href="/NavbarandLayouting/contact.html">Contact Me</a>
+        </div>
+      </nav>
+
+      <!--  -->
+      <form
+        style="width: 400px; margin: auto; padding-top: 75px"
+        onsubmit="addProject(event)"
+      >
+        <h3 style="margin-left: 35%; margin-bottom: 30px">ADD PROJECT</h3>
+        <div>
+          <div>
+            <label for="input-name" style="font-weight: bold; font-size: 20px"
+              >Project Name</label
+            >
+            <input
+              class="style-input"
+              type="text"
+              id="input-nameProject"
+              placeholder="your prooject"
+            />
+          </div>
+
+          <div style="display: flex; margin-top: 10px">
+            <div style="margin-right: 5%">
+              <label for="input-name" style="font-weight: bold; font-size: 20px"
+                >Start Date</label
+              >
+              <input
+                class="style-input"
+                type="date"
+                id="input-startDate"
+                placeholder="your prooject"
+              />
+            </div>
+            <div style="margin-left: 5%">
+              <label for="input-name" style="font-weight: bold; font-size: 20px"
+                >End date</label
+              >
+
+              <input
+                class="style-input"
+                type="date"
+                id="input-endDate"
+                placeholder="your prooject"
+              />
+            </div>
+          </div>
+
+          <div style="margin-top: 10px">
+            <label for="input-name" style="font-weight: bold; font-size: 20px"
+              >Description</label
+            >
+            <textarea
+              id="input-description"
+              placeholder="Description"
+              class="style-description"
+            ></textarea>
+          </div>
+
+          <div style="margin-top: 10px">
+            <label for="input-name" style="font-weight: bold; font-size: 20px"
+              >Technologies</label
+            >
+            <div style="display: flex; margin-top: 10px">
+              <div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="input-node"
+                    value="bx bxl-nodejs"
+                  />
+                  <label for="">Node js</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="input-react"
+                    value="bx bxl-react"
+                    style="margin-top: 10px"
+                  />
+                  <label>React Js</label>
+                </div>
+              </div>
+              <div style="margin-left: 30%">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="input-javascript"
+                    value="bx bxl-javascript"
+                  />
+                  <label>JavaScript</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="input-vuejs"
+                    value="bx bxl-vuejs"
+                    style="margin-top: 10px"
+                  />
+                  <label>Vue Js</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 10px">
+            <label for="input-name" style="font-weight: bold; font-size: 20px"
+              >Upload Image</label
+            >
+          </div>
+          <div
+            style="
+              margin-top: 8px;
+              width: 104.8%;
+              background-color: white;
+              border: 1px solid rgb(95, 99, 99);
+              border-radius: 3px;
+            "
+          >
+            <div style="display: flex; justify-content: space-between">
+              <input type="file" id="input-image" class="style-inputImage" />
+              <div>
+                <img
+                  src="/NavbarandLayouting/asset/file.svg"
+                  style="margin-right: 10px; padding-top: 3px"
+                  id="input-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="button-style">Submit</button>
+      </form>
+    </div>
+
+    <!-- Blog Detail Html -->
+    <div>
+      <div>
+        <h3 style="text-align: center; margin-top: 30px">MY PROJECT</h3>
+      </div>
+
+      <div class="box-project" id="box-projects">
+        <!-- project 1 -->
+        <div style="width: 265px; margin-left: 40px">
+          <div style="margin-top: 30%">
+            <div class="blog-detail">
+              <div>
+                <img
+                  src="/NavbarandLayouting/asset/mobileapp.jpeg"
+                  class="style-imageBlogDetail"
+                  alt="image phone"
+                />
+              </div>
+              <div>
+                <div>
+                  <h3>Dumbways Mobile App - 2021</h3>
+                  <p style="color: gray; margin-bottom: 10px">durasi</p>
+                </div>
+                <div>
+                  <p>
+                    App that used for dumbways student, it was deployed and can
+                    downloaded on playstore. Happy download
+                  </p>
+                  <a
+                    href="../myProjeect/blogdetail.html"
+                    style="color: rgb(152, 155, 95); text-decoration: none"
+                    ><p
+                      style="
+                        font-size: 13px;
+                        margin-bottom: 17px;
+                        margin-top: 10px;
+                      "
+                    >
+                      click here for detail
+                    </p></a
+                  >
+                  <div>
+                    <span
+                      style="margin-left: 200px; color: gray; font-size: 10px"
+                      >1 day ago</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="style-icons">
+                <div>
+                  <i class="bx bxl-nodejs"></i>
+                </div>
+                <div>
+                  <i class="bx bxl-javascript"></i>
+                </div>
+                <div>
+                  <i class="bx bxl-react"></i>
+                </div>
+                <div>
+                  <i class="bx bxl-vuejs"></i>
+                </div>
+              </div>
+              <div class="style-buttonBlogDetails">
+                <div>
+                  <button class="style-buttonEdit">edit</button>
+                </div>
+                <div>
+                  <button class="style-buttonDelete">delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- project 2 -->
+        <div style="width: 265px; margin-left: 40px">
+          <div style="margin-top: 30%">
+            <div class="blog-detail">
+              <div>
+                <img
+                  src="/NavbarandLayouting/asset/mobileapp.jpeg"
+                  class="style-imageBlogDetail"
+                  alt="image phone"
+                />
+              </div>
+              <div>
+                <div>
+                  <h3>Dumbways Mobile App - 2021</h3>
+                  <p style="color: gray; margin-bottom: 10px">durasi</p>
+                </div>
+                <div>
+                  <p>
+                    App that used for dumbways student, it was deployed and can
+                    downloaded on playstore. Happy download
+                  </p>
+                  <a
+                    href="../myProjeect/blogdetail.html"
+                    style="color: rgb(152, 155, 95); text-decoration: none"
+                    ><p
+                      style="
+                        font-size: 13px;
+                        margin-bottom: 17px;
+                        margin-top: 10px;
+                      "
+                    >
+                      click here for detail
+                    </p></a
+                  >
+                </div>
+                <div>
+                  <span style="margin-left: 200px; color: gray; font-size: 10px"
+                    >1 day ago</span
+                  >
+                </div>
+              </div>
+
+              <div class="style-icons">
+                <div>
+                  <i class="bx bxl-nodejs"></i>
+                </div>
+                <div>
+                  <i class="bx bxl-javascript"></i>
+                </div>
+                <div>
+                  <i class="bx bxl-react"></i>
+                </div>
+                <div>
+                  <i class="bx bxl-vuejs"></i>
+                </div>
+              </div>
+              <div class="style-buttonBlogDetails">
+                <div>
+                  <button class="style-buttonEdit">edit</button>
+                </div>
+                <div>
+                  <button class="style-buttonDelete">delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
